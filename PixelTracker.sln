@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelService", "src\PixelService\PixelService.csproj", "{48D19D9E-00B7-4EB9-A140-457274C44B3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F5E90EFD-5109-4EE9-A9F0-862651999B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageService", "src\StorageService\StorageService.csproj", "{42918784-EEB5-413F-ACC9-7AE6C768B03B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{9CDFEE7D-4597-4E03-8AAB-FD1834C701E6}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.Core", "src\Messaging.Core\Messaging.Core.csproj", "{88F2DB0D-7D35-4B36-8925-3C95F19DAC24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.Contract", "src\Messaging.Contract\Messaging.Contract.csproj", "{135E6D16-1D9C-4B28-BB37-05A722CFBF70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "src\ServiceDefaults\ServiceDefaults.csproj", "{ABD4991A-C993-4D7C-AD36-CF52E8D218D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48D19D9E-00B7-4EB9-A140-457274C44B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D19D9E-00B7-4EB9-A140-457274C44B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D19D9E-00B7-4EB9-A140-457274C44B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D19D9E-00B7-4EB9-A140-457274C44B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42918784-EEB5-413F-ACC9-7AE6C768B03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42918784-EEB5-413F-ACC9-7AE6C768B03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42918784-EEB5-413F-ACC9-7AE6C768B03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42918784-EEB5-413F-ACC9-7AE6C768B03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F2DB0D-7D35-4B36-8925-3C95F19DAC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F2DB0D-7D35-4B36-8925-3C95F19DAC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F2DB0D-7D35-4B36-8925-3C95F19DAC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F2DB0D-7D35-4B36-8925-3C95F19DAC24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135E6D16-1D9C-4B28-BB37-05A722CFBF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135E6D16-1D9C-4B28-BB37-05A722CFBF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135E6D16-1D9C-4B28-BB37-05A722CFBF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135E6D16-1D9C-4B28-BB37-05A722CFBF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD4991A-C993-4D7C-AD36-CF52E8D218D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD4991A-C993-4D7C-AD36-CF52E8D218D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD4991A-C993-4D7C-AD36-CF52E8D218D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD4991A-C993-4D7C-AD36-CF52E8D218D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48D19D9E-00B7-4EB9-A140-457274C44B3E} = {F5E90EFD-5109-4EE9-A9F0-862651999B69}
+		{42918784-EEB5-413F-ACC9-7AE6C768B03B} = {F5E90EFD-5109-4EE9-A9F0-862651999B69}
+		{88F2DB0D-7D35-4B36-8925-3C95F19DAC24} = {F5E90EFD-5109-4EE9-A9F0-862651999B69}
+		{135E6D16-1D9C-4B28-BB37-05A722CFBF70} = {F5E90EFD-5109-4EE9-A9F0-862651999B69}
+		{ABD4991A-C993-4D7C-AD36-CF52E8D218D0} = {F5E90EFD-5109-4EE9-A9F0-862651999B69}
+	EndGlobalSection
+EndGlobal

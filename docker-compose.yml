@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  rabbitmq: # login guest:guest
+    image: rabbitmq:3-management
+    hostname: "rabbitmq"
+    labels:
+      NAME: "rabbitmq"
+    ports:
+      - "4369:4369"
+      - "5671:5671"
+      - "5672:5672"
+      - "25672:25672"
+      - "15671:15671"
+      - "15672:15672"
+  
+  pixel-service:
+    container_name: "pixel-service"
+    build:
+      context: /src
+      dockerfile: ./PixelService/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - rabbitmq
+
+  storage-service:
+    container_name: "storage-service"
+    build:
+      context: /src
+      dockerfile: ./StorageService/Dockerfile
+    ports:
+      - "5001:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - rabbitmq
+      - pixel-service
